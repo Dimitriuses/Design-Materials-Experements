@@ -4,9 +4,57 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:DesidnMaterialsExperements"
+        xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="MainWindow" Height="450" Width="800"
+        TextElement.Foreground="{DynamicResource MaterialDesignBody}"
+        TextElement.FontWeight="Regular"
+        TextElement.FontSize="13"
+        TextOptions.TextFormattingMode="Ideal" 
+        TextOptions.TextRenderingMode="Auto"        
+        Background="{DynamicResource MaterialDesignPaper}"
+        FontFamily="{DynamicResource MaterialDesignFont}">
+
     <Grid>
-        
+        <Button x:Name="button" Content="Button" HorizontalAlignment="Left" Margin="10,342,0,0" VerticalAlignment="Top" Width="75"/>
+        <ComboBox x:Name="comboBox" HorizontalAlignment="Left" Margin="179,81,0,0" VerticalAlignment="Top" Width="120">
+            <ComboBoxItem Content="1"/>
+            <ComboBoxItem Content="852"/>
+            <ComboBoxItem Content="777sdfgjk"/>
+        </ComboBox>
+        <TextBox x:Name="textBox" HorizontalAlignment="Left" Height="23" Margin="151,347,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120"/>
+        <TextBlock x:Name="textBlock" HorizontalAlignment="Left" Margin="45,69,0,0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top"/>
+
+        <ListBox x:Name="listBox" HorizontalAlignment="Left" Height="153" Margin="26,139,0,0" VerticalAlignment="Top" Width="356">
+            <ListBoxItem Content="1255"/>
+            <TabItem Content="4588"/>
+            
+
+
+        </ListBox>
+        <RichTextBox x:Name="richTextBox" HorizontalAlignment="Left" Height="235" Margin="433,34,0,0" VerticalAlignment="Top" Width="286">
+            <FlowDocument x:Name="Mess">
+                <Paragraph>
+                    <materialDesign:Card Padding="8" Margin="0" HorizontalAlignment="Right">
+                        <TextBlock Style="{DynamicResource MaterialDesignTitleTextBlock}" FontSize="14">My First Material Design App</TextBlock>
+                    </materialDesign:Card>
+                </Paragraph>
+                <Paragraph FlowDirection="RightToLeft">
+                    <materialDesign:Card Padding="8" Margin="0" HorizontalAlignment="Right">
+                        <TextBlock Style="{DynamicResource MaterialDesignTitleTextBlock}" FontSize="14">My First Material Design App</TextBlock>
+                    </materialDesign:Card>
+                </Paragraph>
+                <Paragraph>
+                    <materialDesign:Card Padding="8" Margin="0" HorizontalAlignment="Right">
+                        <TextBlock Style="{DynamicResource MaterialDesignTitleTextBlock}" FontSize="14">My First Material Design App</TextBlock>
+                    </materialDesign:Card>
+                </Paragraph>
+                <Paragraph FlowDirection="RightToLeft">
+                    <materialDesign:Card Padding="8" Margin="0" HorizontalAlignment="Right">
+                        <TextBlock Style="{DynamicResource MaterialDesignTitleTextBlock}" FontSize="14">My First Material Design App</TextBlock>
+                    </materialDesign:Card>
+                </Paragraph>
+            </FlowDocument>
+        </RichTextBox>
     </Grid>
 </Window>
