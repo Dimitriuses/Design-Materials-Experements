@@ -16,37 +16,35 @@
         FontFamily="{DynamicResource MaterialDesignFont}">
 
     <Grid>
-        <Button x:Name="button" Content="Button" HorizontalAlignment="Left" Margin="10,342,0,0" VerticalAlignment="Top" Width="75"/>
-        <ComboBox x:Name="comboBox" HorizontalAlignment="Left" Margin="179,81,0,0" VerticalAlignment="Top" Width="120">
+        <Button x:Name="button" Content="{materialDesign:PackIcon Kind=Account}" HorizontalAlignment="Left" Margin="10,347,0,0" VerticalAlignment="Top" Width="88" Height="27"/>
+        <ComboBox x:Name="comboBox" HorizontalAlignment="Left" Margin="355,342,0,0" VerticalAlignment="Top" Width="120">
             <ComboBoxItem Content="1"/>
             <ComboBoxItem Content="852"/>
             <ComboBoxItem Content="777sdfgjk"/>
         </ComboBox>
-        <TextBox x:Name="textBox" HorizontalAlignment="Left" Height="23" Margin="151,347,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120"/>
-        <TextBlock x:Name="textBlock" HorizontalAlignment="Left" Margin="45,69,0,0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top"/>
-
-        <ListBox x:Name="listBox" HorizontalAlignment="Left" Height="153" Margin="26,139,0,0" VerticalAlignment="Top" Width="356">
-            <ListBoxItem Content="1255"/>
-            <TabItem Content="4588"/>
-            
-
-
-        </ListBox>
-        <RichTextBox x:Name="richTextBox" HorizontalAlignment="Left" Height="235" Margin="433,34,0,0" VerticalAlignment="Top" Width="286">
+        <TextBox x:Name="textBox"  HorizontalAlignment="Left" Height="23" Margin="151,347,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <TextBlock x:Name="textBlock" HorizontalAlignment="Left" Margin="569,362,0,0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top"/>
+        <RichTextBox x:Name="richTextBox" HorizontalAlignment="Left" Height="327" Margin="10,10,0,0" VerticalAlignment="Top" Width="572" Background="#FF009688" IsReadOnlyCaretVisible="True">
             <FlowDocument x:Name="Mess">
-                <Paragraph>
-                    <materialDesign:Card Padding="8" Margin="0" HorizontalAlignment="Right">
-                        <TextBlock Style="{DynamicResource MaterialDesignTitleTextBlock}" FontSize="14">My First Material Design App</TextBlock>
-                    </materialDesign:Card>
+                <Paragraph AllowDrop="False">
+                    <Grid>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="*" />
+                            <RowDefinition Height="Auto" />
+                        </Grid.RowDefinitions>
+                        <materialDesign:Chip Grid.Row="2" Content="ANZ Bank" Icon="A" IconBackground="{DynamicResource PrimaryHueDarkBrush}" FontSize="14" Height="32" Width="113" Margin="0" />
+                        <materialDesign:Card Grid.Row="1" Padding="8" Margin="0" HorizontalAlignment="Right">
+                            <TextBlock Style="{DynamicResource MaterialDesignTitleTextBlock}" FontSize="14" Grid.Row="1">My First Material Design App</TextBlock>
+                        </materialDesign:Card>
+                    </Grid>
                 </Paragraph>
                 <Paragraph FlowDirection="RightToLeft">
-                    <materialDesign:Card Padding="8" Margin="0" HorizontalAlignment="Right">
-                        <TextBlock Style="{DynamicResource MaterialDesignTitleTextBlock}" FontSize="14">My First Material Design App</TextBlock>
-                    </materialDesign:Card>
+                    
                 </Paragraph>
                 <Paragraph>
+                    <ToggleButton Content="H" Style="{StaticResource MaterialDesignActionLightToggleButton}" ToolTip="MaterialDesignActionToggleButton" materialDesign:ShadowAssist.ShadowDepth="Depth3" />
                     <materialDesign:Card Padding="8" Margin="0" HorizontalAlignment="Right">
-                        <TextBlock Style="{DynamicResource MaterialDesignTitleTextBlock}" FontSize="14">My First Material Design App</TextBlock>
+                        <TextBlock Style="{DynamicResource MaterialDesignTitleTextBlock}" FontSize="14" Grid.Row="1">My First Material Design App</TextBlock>
                     </materialDesign:Card>
                 </Paragraph>
                 <Paragraph FlowDirection="RightToLeft">

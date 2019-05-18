@@ -24,7 +24,8 @@ namespace DesidnMaterialsExperements
         public MainWindow()
         {
             InitializeComponent();
-            Mess.Blocks.Clear();
+            //Mess.Blocks.Clear();
+            
             Card card = new Card();
             card.Padding = new Thickness { Bottom = 8, Left = 8, Right = 8, Top = 8 };
             TextBlock textBlock = new TextBlock();
@@ -33,6 +34,8 @@ namespace DesidnMaterialsExperements
             textBlock.FontSize = 14;
             card.Content = textBlock;
             Paragraph paragraph = new Paragraph();
+            paragraph.FlowDirection = FlowDirection.LeftToRight;
+            paragraph.AllowDrop = false;
             paragraph.Inlines.Add(card);
             Mess.Blocks.Add(paragraph);
 
