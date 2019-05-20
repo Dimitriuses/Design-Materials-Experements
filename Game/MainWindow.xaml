@@ -14,19 +14,27 @@
         TextOptions.TextRenderingMode="Auto"        
         Background="{DynamicResource MaterialDesignPaper}"
         FontFamily="{DynamicResource MaterialDesignFont}">
+    
     <Grid>
-        <materialDesign:Transitioner SelectedIndex="0" AutoApplyTransitionOrigins="True">
+        <materialDesign:DialogHost x:Name="DialogHosts">
+            <!--<materialDesign:DialogHost.DialogContent>
+                <dialogContent />
+            </materialDesign:DialogHost.DialogContent>-->
+            
+            <Button Click="Button_Click"></Button>
+        </materialDesign:DialogHost>
+        <!--<materialDesign:Transitioner SelectedIndex="0" AutoApplyTransitionOrigins="True">
             <materialDesign:Transitioner.InputBindings>
                 <KeyBinding Key="Left" Command="{x:Static materialDesign:Transitioner.MovePreviousCommand}" />
                 <KeyBinding Key="Right" Command="{x:Static materialDesign:Transitioner.MoveNextCommand}" />
             </materialDesign:Transitioner.InputBindings>
-            <!-- you can use a slide for each page, let's add a touch of fade for our first page  -->
+             you can use a slide for each page, let's add a touch of fade for our first page  
             <materialDesign:TransitionerSlide OpeningEffect="{materialDesign:TransitionEffect FadeIn}">
                 
             </materialDesign:TransitionerSlide>
-            <!-- but you can use bare xaml too -->
+             but you can use bare xaml too 
             
-            <!-- you can control (and create your own) wipes -->
+             you can control (and create your own) wipes 
             <materialDesign:TransitionerSlide>
                 <materialDesign:TransitionerSlide.BackwardWipe>
                     <materialDesign:CircleWipe />
@@ -36,7 +44,7 @@
                 </materialDesign:TransitionerSlide.ForwardWipe>
                 
             </materialDesign:TransitionerSlide>
-            <!-- now we are going to slide this in by combining some extra effects.  the inner content slides in, so we'll set the outer background and clip, to keep things nice -->
+             now we are going to slide this in by combining some extra effects.  the inner content slides in, so we'll set the outer background and clip, to keep things nice 
             <materialDesign:TransitionerSlide Background="{DynamicResource MaterialDesignDarkBackground}" Foreground="{DynamicResource MaterialDesignDarkForeground}" ClipToBounds="True">
                 <materialDesign:TransitionerSlide.OpeningEffects>
                     <materialDesign:TransitionEffect Kind="SlideInFromLeft" Duration="0:0:0.8" />
@@ -45,7 +53,7 @@
                 
             </materialDesign:TransitionerSlide>
             
-        </materialDesign:Transitioner>
+        </materialDesign:Transitioner>-->
 
     </Grid>
 </Window>
