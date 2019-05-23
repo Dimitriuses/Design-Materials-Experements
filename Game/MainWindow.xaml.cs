@@ -29,8 +29,10 @@ namespace Game
         private void Button_Click(object sender, RoutedEventArgs e)
         {
             //Login login = new Login();
-            Profile profile = new Profile();
-            profile.Show();
+            AddRecipients dlg = new AddRecipients();
+            dlg.Show();
+            //Profile profile = new Profile();
+            //profile.Show();
             //DialogHost.Show(login);
         }
     }
